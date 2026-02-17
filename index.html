@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador de Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h2>Buscador de Usuarios</h2>
+
+        <input 
+            type="number" 
+            id="inputIdUsuario" 
+            placeholder="Ingrese ID del usuario"
+            min="1"
+            step="1"
+        >
+
+        <button id="botonBuscarUsuario">Buscar</button>
+
+        <div id="contenedorEstado"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modalResultado" class="modal">
+        <div class="modalContenido">
+            <span id="cerrarModal" class="cerrar">&times;</span>
+            <div id="contenidoModal"></div>
+        </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+
+
